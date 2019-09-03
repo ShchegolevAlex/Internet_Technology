@@ -13,3 +13,12 @@
 	/*border-left:center;*/
 	text-align: center;
 }
+
+.mark_spis {
+	text-align: center;
+}
+
+.mark_spis_vlo {
+	/*float: left;*/
+	/*padding-left: center;*/
+}
