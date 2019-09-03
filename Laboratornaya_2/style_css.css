@@ -1,0 +1,21 @@
+{
+	padding:0;
+	margin:0;
+}
+
+Table {
+	margin: auto;
+}
+
+.text_align {
+	text-align: center;
+	font: cursive;
+}
+
+TH {
+	font: Courier New;
+}
+
+TD {
+	font: Arial;
+}
