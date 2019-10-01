@@ -1,44 +1,63 @@
-<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 3.2//RU">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
-	<noscript>Please enable JavaScript</noscript>
-	<script src="js.js"></script>
-	<title>Лабораторная 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+      body{
+        margin: 0 auto;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        background: #aed8e6;
+        align-items: center;
+      }
+      .images{
+        background: #fff;
+        height: 350px;
+        margin: 20px;
+        align-items: center;
+        border: 1px solid #000;
+        display: flex;
+        width: 200px;
+        flex-wrap: wrap;
+      }
+      .images img{
+        margin: 5px;
+      }
+      .imagesContainers{
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 184px;
+      }
+      .imagesContainer{
+        height: 160px;
+        width: 90px;
+        background: #fff;
+      }
+      h1{
+        text-align: center;
+        font-size: 25;
+      }
+    </style>
+    <title>Lab5</title>
 </head>
-
-<body vlink="green" text="black" link="blue" bgcolor="white" link="red">
-<h1>Соберите из фрагментов картинку</h1>
-<!-- <img name="img_name" src="works/s1.gif"> -->
-
-<!-- <FORM name="form1">
-    <input type="button" value="Вызвать set_image" onClick="set_image('img_name1')">
-</FORM> -->
-
-<!-- <img name="animations" src="works/s1.gif" onLoad="idTimer=setTimeout('animation()', delay)">
-
-<FORM name="form1">
-    <input type="button" value="Старт" onClick="setTimeout('animation()', 0)">
-</FORM>
-<FORM name="form2">
-    <input type="button" value="Быстрее" onClick="setTimeout('animation()', delay)">
-</FORM>
-<FORM name="form3">
-    <input type="button" value="Медленнее" onClick="setTimeout('animation()', freeze())">
-</FORM>
-<FORM name="form4">
-    <input type="button" value="Стоп" onClick="clearTimeout(idTimer)">
-</FORM> -->
-
-<IMG name="img_name" SRC="works/r1.gif" dragEnabled STYLE="position:absolute; top:110px; left:10px; cursor:hand;">
-
-<IMG name="img_name1" SRC="works/r2.gif" dragEnabled STYLE="position:absolute; top:110px; left:110px; cursor:hand;">
-
-<IMG name="img_name2" SRC="works/r3.gif" dragEnabled STYLE="position:absolute; top:280px; left:110px; cursor:hand;">
-
-<IMG name="img_name3" SRC="works/r4.gif" dragEnabled STYLE="position:absolute; top:280px; left:10px; cursor:hand;">
-
+<body>
+  <h1>Собери мозайку!</h1>
+    <div class="images">
+        <img src="works/r1.gif" draggable='false' alt="">
+        <img src="works/r2.gif" alt="">
+        <img src="works/r3.gif" draggable='false'alt="">
+        <img src="works/r4.gif" draggable='false' alt="">
+    </div>
+    <div class="imagesContainers">
+        <div class="imagesContainer"></div>
+        <div class="imagesContainer"></div>
+        <div class="imagesContainer"></div>
+        <div class="imagesContainer"></div>
+    </div>
+    <script src='js.js'></script>
 </body>
 </html>
