@@ -37,6 +37,7 @@
 .text {
 	margin-left: 10px;
 	line-height: 25px;
+	text-align: justify;
 }
 .zagolovok {
 	color: blue;
@@ -56,4 +57,5 @@
 
 B {
 	letter-spacing: 5px;
+	color: red;
 }
